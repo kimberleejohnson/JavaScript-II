@@ -1,6 +1,27 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
 
+// Global Scope (the whole world of our code) 
+
+// Block scope, block of code, "kingdom of code"
+function sundae() {
+  // The lexical scope of sprinkles is sundae () because that's where it was initially defined. 
+  const toppings = "sprinkles";
+  console.log(`Ice cream with cherries and ${toppings}!`);
+  
+  function cone() {
+    console.log(`Ice cream in a cone but still with ${toppings}!`);
+
+  }// cone block ends
+  
+  // Calling within sundae so it still runs 
+  cone(); 
+
+}// sundae block ends 
+
+sundae();
+
+
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
