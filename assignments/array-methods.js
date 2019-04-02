@@ -118,3 +118,13 @@ let companyList = runners.map(function(currentValue){
   console.log(companyList.sort()); 
 
 // Problem 3
+
+let donorList = runners.map(function(currentValue){
+    return currentValue.donation; 
+  }); 
+  
+  donorList.sort(function(a, b) {
+      return a - b;
+   });
+  
+  console.log(donorList); 
