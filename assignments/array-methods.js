@@ -111,4 +111,10 @@ console.log(emailList);
 
 // Problem 2
 
+let companyList = runners.map(function(currentValue){
+    return currentValue.company_name; 
+  }); 
+ 
+  console.log(companyList.sort()); 
+
 // Problem 3
