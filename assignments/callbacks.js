@@ -28,10 +28,8 @@ const items = ['Pencil', 'Notebook', 'yo-yo', 'Gum'];
 
 // CHALLENGE 1 // 
 
-function getLength(arr, cb) {
-  // getLength passes the length of the array into the callback.
-}
 
+// getLength passes the length of the array into the callback.
 // Higher order function using "cb" as the call back 
 function getLength(arr, cb) {
   return cb(arr.length); 
@@ -44,10 +42,7 @@ getLength(items, function(length) {
 
 // CHALLENGE 2 // 
 
-function last(arr, cb) {
-   // last passes the last item of the array into the callback.
- }
-
+ // Last passes the last item of the array into the callback.
  // Higher order function using "cb" as the call back 
  function last(arr, cb) {
   return cb(arr[arr.length - 1]);
@@ -60,10 +55,7 @@ function last(arr, cb) {
 
 // CHALLENGE 3 // 
 
-function sumNums(x, y, cb) {
-   // sumNums adds two numbers (x, y) and passes the result to the callback.
-  }
-
+// sumNums adds two numbers (x, y) and passes the result to the callback.
 // Higher order function using "cb" as the call back 
 function sumNums(x, y, cb) {
   return cb(x + y); 
@@ -75,10 +67,8 @@ function sumNums(x, y, cb) {
  }); 
 
 
-function multiplyNums(x, y, cb) {
-   // multiplyNums multiplies two numbers and passes the result to the callback.
- }
 
+ // MultiplyNums multiplies two numbers and passes the result to the callback.
  // Higher order function using "cb" as the call back 
  function multiplyNums(x, y, cb) {
   return cb(x*y); 
@@ -91,11 +81,8 @@ multiplyNums(2,5, function(product) {
 
 // CHALLENGE 5 // 
 
-function contains(item, list, cb) {
-   // contains checks if an item is present inside of the given array/list.
-   // Pass true to the callback if it is, otherwise pass false.
- }
-
+ // Contains checks if an item is present inside of the given array/list.
+  // Pass true to the callback if it is, otherwise pass false.
  // Higher order function using "cb" as the call back 
  function contains(item, list, cb) {
     // TRUE OR FALSE 
@@ -110,8 +97,11 @@ contains ('Pencil', items, function(check) {
 
 // /* STRETCH PROBLEM */
 
-// function removeDuplicates(array, cb) {
-//   // removeDuplicates removes all duplicate values from the given array.
+// // Creating an array with duplicates to test
+// instruments = [mandolin, mandolin, guitar, drums]; 
+
+//  function removeDuplicates(array, cb) {
+//    // removeDuplicates removes all duplicate values from the given array.
+
 //   // Pass the duplicate free array to the callback function.
-//   // Do not mutate the original array.
-// }
+// // }
