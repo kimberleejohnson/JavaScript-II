@@ -89,10 +89,24 @@ multiplyNums(2,5, function(product) {
   console.log(product);
 }); 
 
-// function contains(item, list, cb) {
-//   // contains checks if an item is present inside of the given array/list.
-//   // Pass true to the callback if it is, otherwise pass false.
-// }
+// CHALLENGE 5 // 
+
+function contains(item, list, cb) {
+   // contains checks if an item is present inside of the given array/list.
+   // Pass true to the callback if it is, otherwise pass false.
+ }
+
+ // Higher order function using "cb" as the call back 
+ function contains(item, list, cb) {
+    // TRUE OR FALSE 
+    return cb(list.includes(item)); 
+ }
+
+ // Function invocation 
+
+contains ('Pencil', items, function(check) {
+  console.log(check); 
+}); 
 
 // /* STRETCH PROBLEM */
 
