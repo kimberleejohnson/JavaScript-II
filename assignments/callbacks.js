@@ -70,14 +70,24 @@ function sumNums(x, y, cb) {
  }
 
  // Function invocation 
- sumNums(2,5, function(multiply){
-   console.log(multiply); 
+ sumNums(2,5, function(add){
+   console.log(add); 
  }); 
 
 
-// function multiplyNums(x, y, cb) {
-//   // multiplyNums multiplies two numbers and passes the result to the callback.
-// }
+function multiplyNums(x, y, cb) {
+   // multiplyNums multiplies two numbers and passes the result to the callback.
+ }
+
+ // Higher order function using "cb" as the call back 
+ function multiplyNums(x, y, cb) {
+  return cb(x*y); 
+}
+
+ // Function invocation 
+multiplyNums(2,5, function(product) {
+  console.log(product);
+}); 
 
 // function contains(item, list, cb) {
 //   // contains checks if an item is present inside of the given array/list.
