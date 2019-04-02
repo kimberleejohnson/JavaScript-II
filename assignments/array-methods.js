@@ -97,6 +97,17 @@ let ticketPriceTotal = runners.reduce(function(runningTotal, currentValue) {
 // Now that you have used .forEach(), .map(), .filter(), and .reduce().  I want you to think of potential problems you could solve given the data set and the 5k fun run theme.  Try to create and then solve 3 unique problems using one or many of the array methods listed above.
 
 // Problem 1
+// Challenge: The 5K company is running another race in a few months, and wants to email all of the participants advertising the new race. Create a new array for the marketing team with only participants' first names and emails. 
+
+// Solution 
+
+let emailList = [];
+
+runners.forEach(function(currentValue){
+     emailList.push(`${currentValue.first_name}, ${currentValue.email}`); 
+ });  
+
+console.log(emailList);
 
 // Problem 2
 
