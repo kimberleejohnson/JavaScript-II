@@ -27,9 +27,10 @@ sundae();
 
 
 // ==== Challenge 2: Create a counter function ====
-const counter = () => {
-  // Return a function that when invoked increments and returns a counter variable.
-};
+// Return a function that when invoked increments and returns a counter variable.
+const counter = () => { n++; return n;}
+var n = 0;
+
 // Example usage: const newCounter = counter();
 // newCounter(); // 1
 // newCounter(); // 2

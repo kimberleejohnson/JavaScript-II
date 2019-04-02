@@ -95,13 +95,15 @@ contains ('Pencil', items, function(check) {
   console.log(check); 
 }); 
 
-// /* STRETCH PROBLEM */
+// // /* STRETCH PROBLEM */
 
 // // Creating an array with duplicates to test
 // instruments = [mandolin, mandolin, guitar, drums]; 
 
-//  function removeDuplicates(array, cb) {
-//    // removeDuplicates removes all duplicate values from the given array.
+//   // removeDuplicates removes all duplicate values from the given array.
+//   function removeDuplicates(array, cb) {
 
-//   // Pass the duplicate free array to the callback function.
-// // }
+//   }
+
+// // Pass the duplicate free array to the callback function.
+ 
